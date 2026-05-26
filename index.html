@@ -21,6 +21,10 @@
         <li>Run `ssh-keygen -t ed25519 -C "github-actions-deploy" -f ./do-github-actions-deploy -N ""` on your local machine</li>
         <li>Copy ./github-actions-deploy and /github-actions-deploy.pub on droplet (~/.ssh/id_ed25519) by default</li>
         <li>Copy pub file code and paste it on another line in `~/.ssh/authorized_keys`</li>
+        <li>Add the private key as `DO_SSH_PRIVATE_KEY` in GitHub Secrets and variables</li>
+        <li>Add the ip address as `DO_HOST` in GitHub Secrets and variables</li>
+        <li>Add the user as `DO_USER` in GitHub Secrets and variables</li>
+        <li>Add the deploy path as `DO_DEPLOY_PATH` in GitHub Secrets and variables (Optional)</li>
     </ul>
     <script>
         console.log("Hello, world!");
